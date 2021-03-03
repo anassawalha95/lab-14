@@ -1,0 +1,16 @@
+<main>
+    <% Book.forEach(element=> { %>
+        <form action="/updatebook/<%= element.id %>?method=put" method="post" id="update-form" class="update-form">
+
+            <input type="text" name='title' value="<%= element.title %>">
+            <input type="text" name='author' value="<%= element.author %>">
+            <input type="text" name='img_url' value="<%= element.img_url %>">
+            <textarea type="text" name='description' cols="40" rows="20"><%= element.description %></textarea>
+
+            <input type="text" name="book_shelf" value="<%= element.book_shelf %>">
+
+            <input type="submit" class="book-btn" value="Update Book">
+            ​
+        </form>
+        <% }); %>
+</main>
