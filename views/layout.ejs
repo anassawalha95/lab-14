@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="https://www.freeiconspng.com/uploads/book-icon--icon-search-engine-6.png"
+        type="image/x-icon">
+
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/base.css">
+    <link rel="stylesheet" href="/styles/layout.css">
+    <link rel="stylesheet" href="/styles/modules.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4b9ba14b0f.js" crossorigin="anonymous"></script>
+    <script src="/js/app.js"></script>
+</head>
+
+
+
+<body>
+    <header class="header">
+        <h1 class="website-name">Best Books!</h1>
+        <a class="icon" onclick="toggleNav()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </header>
+    <nav id="nav" class="nav">
+        <a href="/" class="nav-items ">Home</a>
+        <a href="/searches/new" class="nav-items ">Search The Google Books API</a>
+    </nav>
+
+    <%- body %>
+</body>
+
+<footer class="footer">
+    <a><i class="fab fa-facebook"></i> </i></a>
+    <a><i class="fab fa-twitter"></i> </i></a>
+    <a><i class="fab fa-github"></i> </i></a>
+    <a><i class="fab fa-linkedin"></i> </i></a>
+</footer>
+
+</html>

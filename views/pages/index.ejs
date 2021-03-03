@@ -1,0 +1,22 @@
+<div class="sub-info"><span class="number-of-books-saved">
+        <%= numberOfBooks %>
+    </span> Saved Books</div>
+<main>
+    <% allBooks.forEach(element=> { %>
+
+        <section class="book">
+            <img src="<%= element.img_url %>" alt="" class="book-cover">
+            <h2 class="book-title">
+                <%= element.title %>
+            </h2>
+            <h6 class="book-author">
+                <%= element.author %>
+            </h6>
+
+
+            <a href="/books/detail/<%= element.id %>" class="show-book-details" value="">View Details</a>
+        </section>
+
+
+        <% }); %>
+</main>
